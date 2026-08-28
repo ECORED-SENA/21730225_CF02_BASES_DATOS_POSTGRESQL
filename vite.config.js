@@ -8,6 +8,7 @@ module.exports = defineConfig(({ mode }) => {
 
   return {
     base: fileSchemeBuild ? './' : '',
+    clearScreen: false,
     optimizeDeps: {
       // UMD de aos usa }(this,function(){…}); en ESM `this` es undefined → rompe e.AOS = …
       include: ['aos'],
@@ -18,17 +19,17 @@ module.exports = defineConfig(({ mode }) => {
       },
       ...(fileSchemeBuild
         ? {
-            // Chrome bloquea <script type="module"> bajo file:// (origen null + CORS).
-            // Un único IIFE + script clásico evita el cargador de módulos.
-            cssCodeSplit: false,
-            rollupOptions: {
-              output: {
-                format: 'iife',
-                inlineDynamicImports: true,
-                name: '__ecoredFileBuild',
-              },
+          // Chrome bloquea <script type="module"> bajo file:// (origen null + CORS).
+          // Un único IIFE + script clásico evita el cargador de módulos.
+          cssCodeSplit: false,
+          rollupOptions: {
+            output: {
+              format: 'iife',
+              inlineDynamicImports: true,
+              name: '__ecoredFileBuild',
             },
-          }
+          },
+        }
         : {}),
     },
     plugins: [

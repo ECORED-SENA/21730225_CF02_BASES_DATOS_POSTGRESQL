@@ -3,14 +3,20 @@
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
+    top: 10%
+    left: 0%
     width: 20%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
-    top: 30%
+    top: 50%
     right: 10%
+    width: 20%
+  &-3
+    animation: float1 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 70%
+    right: 70%
     width: 20%
 
 @keyframes float1
@@ -52,3 +58,97 @@
 @media screen and (max-width: $bp-min-sm)
   .mb-cus
     margin-bottom: 2em !important
+
+/// TITULOS TERCER NIVEL
+.titulo-tercer-nivel
+  width: fit-content
+  max-width: 100%
+  position: relative
+  display: inline-flex
+  align-items: center
+  background-color: #F69F47
+  border-radius: 30px
+  padding-right: 16px
+  padding-left: 52px
+  min-height: 48px
+
+  @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
+
+  &__icon
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 65px
+    max-width: 65px
+    height: auto
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text
+    margin: 0
+    margin: 0 15px 0 15px
+    white-space: normal
+    word-break: break-word
+
+.tarjeta-codigo
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+  padding-top: 3rem
+  &:before
+    position: absolute
+    content: ''
+    height: 55px
+    background-color: #3a1d71
+    width: 100%
+    top: 0
+    left: 0
+  &:after
+    position: absolute
+    content: url('../assets/curso/temas/botones.svg')
+    top: 0
+    left: 0
+    transform: translate(20px, 20px)
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/img1.png") !important
+
+.tabs-c__header
+  margin-bottom: 0px
+.tabs-c__content-item
+  background-color: #E9F6F6
+.tabs-c__tab--active
+  span
+    font-weight: $base-bold-font-weight
+
+.tarjeta--azul1
+  background-color: #FFFFFF
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #E8EF1A
+.slyder-a__bullets__item--active
+  background-color: #BBAAEB
+.slyder-a__bullets__item
+  background-color: #E7E1F8
+
+.bg
+  &-c1
+    background-color: #D4EEEE
+  &-c2
+    background-color: #E3DCF6
+    border-radius: 15px
+  &-c3
+    background-image: url("../assets/curso/temas/bg/img2.png") !important
+    background-repeat: no-repeat
+    background-size: cover
+    margin-inline: -3.5rem
+  &-c4
+    background-color: #D4EEEE
+    border-radius: 15px
+    height: 100%
+    transition: all .5s ease
+  &-c4:hover
+    background-color: #FBD8B4
