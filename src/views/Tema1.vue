@@ -73,7 +73,7 @@
             .col-lg-6.mb-4.mb-lg-0
               figure
                 img(src='@/assets/curso/temas/t1/img5.png', alt='', style='width: 430px').m-auto
-            .col-lg-6.mb-4.mb-lg-0
+            .col-lg-6
               h4 DELETE
               p.mb-0 Elimina registros de forma selectiva mediante la cláusula #[b WHERE]. Opera bajo el esquema #[b MVCC], por lo que genera registros muertos que permanecen almacenados hasta que se ejecuta el proceso de limpieza física (#[i autovacuum]) (PostgreSQL 16.0 Documentation, 2026). Es una operación completamente transaccional y permite revertir los cambios mediante #[b ROLLBACK].
         .p-3.p-md-4(titulo="TRUNCATE")
@@ -81,7 +81,7 @@
             .col-lg-6.mb-4.mb-lg-0
               figure
                 img(src='@/assets/curso/temas/t1/img6.png', alt='', style='width: 430px').m-auto
-            .col-lg-6.mb-4.mb-lg-0
+            .col-lg-6
               h4 TRUNCATE
               p.mb-0 Elimina de forma inmediata la totalidad de las filas de una tabla. No recorre los registros individualmente ni genera bitácoras de tuplas muertas; en su lugar, desasigna directamente las páginas de almacenamiento a nivel del sistema de archivos del sistema operativo. Al omitir el procesamiento transaccional granular, ofrece un rendimiento significativamente superior, aunque requiere privilegios administrativos debido a su impacto sobre la estructura física de la tabla.
       p.mb-0(data-aos="fade-right") La elección entre #[b DELETE] y #[b TRUNCATE] dependerá del objetivo de la operación, del volumen de información involucrado y del nivel de control transaccional requerido durante el proceso de administración de la base de datos.
