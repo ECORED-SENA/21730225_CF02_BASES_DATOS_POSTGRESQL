@@ -175,14 +175,70 @@ export default {
   },
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Definición',
+      termino: 'ACID',
+      significado:
+        'acrónimo en inglés de Atomicidad, Consistencia, Aislamiento y Durabilidad (<i>Atomicity, Consistency, Isolation, Durability</i>). Es el conjunto de cuatro propiedades fundamentales que un motor transaccional como PostgreSQL garantiza de forma mandatoria para asegurar que los datos permanezcan válidos e indestructibles ante fallas del sistema.',
+    },
+    {
+      termino: '<i>Backend</i>',
+      significado:
+        'capa lógica y de acceso a datos de una aplicación de software que opera del lado del servidor. Se encarga de procesar las reglas de negocio, validar la seguridad y realizar las conexiones operativas directas hacia el motor de base de datos.',
+    },
+    {
+      termino: 'CRUD',
+      significado:
+        'acrónimo utilizado en la ingeniería de software para condensar las cuatro operaciones esenciales de manipulación de registros en un repositorio físico: Crear (INSERT), Leer (SELECT), Actualizar (UPDATE) y Borrar (DELETE).',
+    },
+    {
+      termino: 'DBA',
+      significado:
+        'administrador de Bases de Datos (<i>Database Administrator</i>). Rol profesional y técnico encargado de asegurar la correcta infraestructura del motor, gobernar las directivas de seguridad granular, planificar las matrices de permisos, optimizar los índices de rendimiento y garantizar la continuidad del negocio mediante respaldos.',
+    },
+    {
+      termino: '<i>Frontend</i>',
+      significado:
+        'capa visual, de presentación e interacción de una solución informática con la que el usuario final interactúa de manera directa (por ejemplo, formularios web o aplicaciones móviles que capturan las solicitudes del negocio).',
+    },
+    {
+      termino: 'PL/pgSQL',
+      significado:
+        'lenguaje procedural nativo y embebido de PostgreSQL que extiende las capacidades declarativas del estándar SQL, permitiendo estructurar lógica imperativa mediante variables, control de flujos condicionales, ciclos y captura avanzada de excepciones técnicas.',
+    },
+    {
+      termino: 'Triggers',
+      significado:
+        'disparadores u objetos de automatización reactiva implementados en el servidor, los cuales ejecutan de forma automática y obligatoria una función procedural inmediatamente antes o después de que se suscite un evento DML específico sobre una tabla.',
+    },
+    {
+      termino: 'Tuplas',
+      significado:
+        'representación formal dentro del modelo relacional para hacer referencia a una fila, registro o instancia de datos individual alojada dentro de una estructura bidimensional (tabla).',
+    },
+    {
+      termino: 'Vistas materializadas',
+      significado:
+        'objeto lógico que almacena físicamente en el disco duro el resultado de una consulta relacional pesada, actuando como una instantánea caché de datos para optimizar drásticamente la velocidad de respuesta de los reportes gerenciales de la empresa.',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Elmasri, R., y Navathe, S. B. (2021). Fundamentals of database systems (8th ed.). Pearson.',
       link: '',
+    },
+    {
+      referencia: 'Neon. (2026). Separating storage and compute. Neon Docs.',
+      link: 'https://neon.com/docs/postgres/overview',
+    },
+    {
+      referencia:
+        'PostgreSQL Global Development Group. (2026). PostgreSQL 16.0 documentation: Chapter 18. Server setup and operation.',
+      link: 'https://www.postgresql.org/docs/16/runtime.html',
+    },
+    {
+      referencia:
+        'Silberschatz, A., Korth, H. F., y Sudarshan, S. (2002). Fundamentos de bases de datos. McGraw-Hill.',
+      link: 'https://biblioteca.univalle.edu.ni/files/original/01aebde3cc06dce33f2538aa2724eb2541cb9473.pdf',
     },
   ],
   creditos: [
@@ -191,7 +247,8 @@ export default {
       autores: [
         {
           nombre: 'Claudia Johanna Gómez Pérez',
-          cargo: 'Líder del Ecosistema',
+          cargo:
+            'Profesional 06. Responsable del ecosistema virtual de recursos educativos digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
@@ -205,9 +262,16 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: '',
-          cargo: '',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Jaime Hernán Tejada Llano',
+          cargo: 'Experto temático',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Paola Alexandra Moya Peralta',
+          cargo: 'Evaluadora instruccional',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
       ],
     },
@@ -215,20 +279,50 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: '',
+          nombre: 'Carlos Julian Ramirez Benitez',
           cargo: 'Diseñador de contenidos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
+          nombre: 'Jhon Jairo Urueta Alvarez',
           cargo: 'Desarrollador <i>full stack</i>',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
-          cargo: '',
+          nombre: 'Alejandro Delgado Acosta',
+          cargo: 'Intérprete lenguaje de señas',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Cristhian Giovanni Gordillo Segura',
+          cargo: 'Intérprete lenguaje de señas',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Juan Pablo Rojas Polania',
+          cargo: 'Animador y productor audiovisual',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Carlos Eduardo Garavito Parada',
+          cargo: 'Animador y productor audiovisual',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Maria Carolina Tamayo Lopez',
+          cargo: 'Locución',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'German Acosta Ramos',
+          cargo: 'Locución',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
@@ -238,13 +332,25 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: '',
+          nombre: 'Ricardo Oliveros Zambrano',
           cargo: 'Validador de recursos educativos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
+          nombre: 'Aixa Natalia Sendoya Fernández',
+          cargo: 'Validador de recursos educativos digitales',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Daniel Ricardo Mutis Gómez',
+          cargo: 'Evaluador para contenidos inclusivos y accesibles',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Anyerson Wilfredo Pizo Ossa',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',

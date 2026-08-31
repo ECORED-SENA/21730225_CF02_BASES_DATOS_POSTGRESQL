@@ -22,7 +22,7 @@ export default {
       tema: 'Microcontroladores y sensores',
       titulo: 'Cuestionario',
       introduccion:
-        '<b>Objetivo:</b> evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> evaluar la apropiación técnica y la capacidad de análisis procedimental en lo referente a operaciones DML, funciones de agregación, uniones relacionales (Joins) y el desarrollo de lógica programable (PL/pgSQL y Triggers) en PostgreSQL.',
       barajarPreguntas: false,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
@@ -30,28 +30,31 @@ export default {
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            '¿Cuál es el beneficio de utilizar una sentencia INSERT INTO masiva en lugar de múltiples inserciones individuales?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Se reduce el tráfico de red y se procesa en una sola transacción.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Evita tener que definir los tipos de datos en la tabla.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'PostgreSQL desactiva automáticamente las restricciones CHECK.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Modifica físicamente las páginas del sistema de archivos de inmediato.',
               esCorrecta: false,
             },
           ],
@@ -62,28 +65,30 @@ export default {
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
+            'La cláusula avanzada RETURNING en una instrucción INSERT se utiliza principalmente para:',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Obtener de forma inmediata valores generados por el servidor sin hacer un SELECT posterior.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Revertir la transacción si los datos son inválidos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Devolver el control de la consola al sistema operativo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Limpiar los registros muertos generados por el mecanismo MVCC.',
               esCorrecta: false,
             },
           ],
@@ -92,28 +97,33 @@ export default {
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
+          texto:
+            '¿Qué sucede a nivel interno en el motor PostgreSQL cuando se ejecuta una sentencia UPDATE?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Se marca la tupla antigua como obsoleta y se escribe una versión nueva del registro.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'Se sobrescriben directamente los bytes físicos originales en el disco.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'La tabla se bloquea por completo impidiendo cualquier lectura concurrente.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'El proceso maestro postgres realiza un <i>fork</i> obligatorio del clúster.',
               esCorrecta: false,
             },
           ],
@@ -123,28 +133,28 @@ export default {
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
+            'Si se requiere vaciar por completo el contenido de una tabla de millones de filas de la manera más rápida posible y sin escanear registro por registro, el comando idóneo es:',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'TRUNCATE.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'DELETE.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'DROP.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'REMOVE.',
               esCorrecta: false,
             },
           ],
@@ -153,28 +163,29 @@ export default {
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
+          texto:
+            'Al intentar evaluar la presencia de valores nulos en una columna de tipo texto, ¿cuál sintaxis es la correcta?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'WHERE columna IS NULL.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'WHERE columna = NULL.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'WHERE columna LIKE NULL.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'WHERE columna <> NULL.',
               esCorrecta: false,
             },
           ],
@@ -184,28 +195,28 @@ export default {
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
+            'Para paginar los resultados de una consulta web y saltarse las primeras 20 filas del conjunto de datos, se debe emplear:',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'OFFSET 20.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'LIMIT 20.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'FETCH 20.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'PAGE 20.',
               esCorrecta: false,
             },
           ],
@@ -215,28 +226,32 @@ export default {
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
+            '¿Cuál es la diferencia fundamental entre las cláusulas WHERE y HAVING en una consulta con agrupamientos?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'WHERE filtra filas individuales antes del agrupamiento y HAVING filtra los grupos consolidados.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'HAVING solo se puede usar con el tipo de dato avanzado JSONB.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'WHERE opera únicamente del lado del cliente y HAVING del lado del servidor.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Ambas cláusulas ejecutan exactamente el mismo algoritmo y son intercambiables.',
               esCorrecta: false,
             },
           ],
@@ -246,28 +261,28 @@ export default {
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
+            '¿Qué tipo de Join devuelve únicamente las tuplas donde existe una coincidencia exacta y matemática entre las tablas involucradas?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'INNER JOIN',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'LEFT JOIN',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'FULL OUTER JOIN',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'RIGHT JOIN',
               esCorrecta: false,
             },
           ],
@@ -277,28 +292,28 @@ export default {
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
+            'En un LEFT JOIN, si una fila de la tabla izquierda no encuentra coincidencia en la tabla derecha, los campos de la tabla derecha se completan con:',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'Valores nulos (NULL).',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Espacios en blanco.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'El valor por defecto de la clave primaria.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Ceros (0).',
               esCorrecta: false,
             },
           ],
@@ -308,28 +323,32 @@ export default {
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
+            '¿Cuál es la característica principal de una subconsulta correlacionada?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Hace referencia a una columna de la tabla externa, ejecutándose una vez por cada fila analizada.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'Se ejecuta una sola vez al inicio de la instrucción principal.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'Se guarda físicamente en el disco como una vista materializada.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'No permite el uso de operadores lógicos como <b>AND</b> o <b>OR</b>.',
               esCorrecta: false,
             },
           ],
@@ -339,28 +358,28 @@ export default {
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
+            'Las secciones obligatorias que delimitan un bloque estructural básico en PL/pgSQL son:',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto: 'DECLARE, BEGIN, END;',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'CREATE, SET, ALTER',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'TRIGGER, FUNCTION, CALL',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'IF, LOOP, EXCEPTION',
               esCorrecta: false,
             },
           ],
@@ -370,28 +389,32 @@ export default {
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            '¿Qué diferencia técnica clave existe entre una Función Almacenada y un Procedimiento Almacenado en PostgreSQL?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Los procedimientos pueden gestionar control transaccional (COMMIT/ROLLBACK) interno y las funciones no.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'Las funciones no admiten parámetros y los procedimientos sí.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'Las funciones son siempre IMMUTABLE y los procedimientos son VOLATILE.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Las funciones se invocan con CALL y los procedimientos se integran dentro de un SELECT.',
               esCorrecta: false,
             },
           ],
@@ -401,28 +424,29 @@ export default {
         {
           id: 13,
           texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
+            'Dentro de un bloque de excepciones en PL/pgSQL, la variable especial SQLERRM almacena:',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'El mensaje descriptivo del sistema sobre la excepción suscitada.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'El código numérico interno del error.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'El nombre de la tabla que causó el fallo.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'La versión física del servidor de la base de datos.',
               esCorrecta: false,
             },
           ],
@@ -432,28 +456,32 @@ export default {
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            'Un disparador (<i>Trigger</i>) configurado con la temporización BEFORE permite:',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'Modificar los valores de la tupla entrante antes de que se validen las restricciones e <i>integrity</i>.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto:
+                'Replicar datos de forma segura una vez asentada la transacción en el disco.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'Crear automáticamente un índice B-Tree sobre la tabla operativa.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto:
+                'Ejecutar la instrucción REFRESH MATERIALIZED VIEW de forma síncrona.',
               esCorrecta: false,
             },
           ],
@@ -463,28 +491,30 @@ export default {
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
+            'En un disparador de fila (FOR EACH ROW) orientado a un evento UPDATE, la variable lógica OLD contiene:',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
+              texto:
+                'La versión previa de la tupla con los datos originales antes del cambio.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'Los datos modificados que se intentan insertar.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto:
+                'La estructura inicial de la tabla antes de ser compilada.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Una copia exacta del log de transacciones (WAL).',
               esCorrecta: false,
             },
           ],
