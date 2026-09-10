@@ -207,7 +207,7 @@
               img(src='@/assets/curso/temas/t3/img3.svg', alt='', style='width: 120px').m-auto
             p.text-center #[b DIVISION_BY_ZERO]
             p.text-center Captura operaciones aritméticas que intentan dividir un valor entre cero.
-      p.mb-5(data-aos="fade-right") Durante el procesamiento de una excepción es posible acceder a información de diagnóstico suministrada por PostgreSQL, como el código del error (#[b SQLSTATE]) y el mensaje descriptivo (#[b SQLERRM]). Estos elementos permiten implementar respuestas específicas según el tipo de incidente detectado.
+      p.mb-5(data-aos="fade-right") Durante el procesamiento de una excepción, es posible acceder a información de diagnóstico suministrada por PostgreSQL, como el código del error (#[b SQLSTATE]) y el mensaje descriptivo (#[b SQLERRM]). Estos elementos permiten implementar respuestas específicas según el tipo de incidente detectado.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Uso de bloques condicionales para resguardar la consistencia de los datos en ejecuciones por lotes
@@ -290,9 +290,9 @@
             img(src='@/assets/curso/temas/t3/img6.png', alt='', style='width: 300px').m-auto
         .col-lg-9(data-aos="fade-left")
           AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul2")
-            .row(titulo="Precisión del control de grupos")
+            .row(titulo="Centralización de la regla de negocio")
               .col-12
-                p.mb-0 Al implementar la condición #[b HAVING SUM(t.valor_base_recaudo) > 100000.00] en el primer reporte, PostgreSQL calcula inicialmente el valor total recaudado por cada conductor y, posteriormente, excluye aquellos grupos que no superan el umbral financiero establecido. Este comportamiento evidencia la diferencia funcional entre #[b HAVING], que actúa después del agrupamiento, y #[b WHERE], que filtra los registros antes de ejecutar #[b GROUP BY].
+                p.mb-0 El cálculo de la penalización del 5 % aplicable a los autobuses con más de cinco años de servicio se ejecuta directamente en la memoria compartida del servidor PostgreSQL. La aplicación #[i backend] únicamente invoca el procedimiento mediante el comando #[b CALL liquidar_jornada_conductor(...)], reduciendo la transferencia de datos y garantizando que la lógica financiera permanezca centralizada en el motor de base de datos.
             .row(titulo="Robustez y control atómico")
               .col-12
                 p.mb-0 Al implementar el manejo específico de la excepción #[b WHEN UNIQUE_VIOLATION], si un operador registra accidentalmente la misma operación en dos ocasiones, PostgreSQL intercepta el error de duplicidad de clave, ejecuta un #[b ROLLBACK] seguro sobre la operación afectada y genera un mensaje de advertencia controlado. De esta manera, se evita la interrupción del proceso y se preserva la estabilidad de la aplicación utilizada por la empresa.

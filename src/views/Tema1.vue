@@ -21,7 +21,7 @@
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Sentencias de inserción masiva y selectiva de registros (INSERT INTO)
-      p(data-aos="fade-right") La creación de nuevos registros se realiza mediante la instrucción #[b INSERT INTO], la cual comunica al proceso del servidor la intención de añadir filas lógicas a una relación física específica. La sintaxis estándar exige declarar explícitamente la tabla de destino, la lista de atributos que se desean poblar y los valores correspondientes, organizados por tuplas (Silberschatz, Korth, y Sudarshan, 2002).
+      p(data-aos="fade-right") La creación de nuevos registros se realiza mediante la instrucción #[b INSERT INTO], la cual comunica al proceso del servidor la intención de añadir filas lógicas a una relación física específica. La sintaxis estándar exige declarar explícitamente la tabla de destino, la lista de atributos que se desean poblar y los valores correspondientes, organizados por tuplas (Silberschatz; Korth, y Sudarshan, 2002).
       .row.mb-3
         .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
           .p-4.bg-c2
@@ -66,7 +66,7 @@
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Modificación y actualización condicional de datos (UPDATE)
       p(data-aos="fade-right") Cuando la información pierde vigencia operativa, PostgreSQL dispone de dos comandos con finalidades similares, pero con comportamientos internos y efectos sobre el rendimiento claramente diferenciados.
-      p(data-aos="fade-right") A continuación, se resume las principales características de cada uno de ellos:
+      p(data-aos="fade-right") A continuación, se resumen las principales características de cada uno de ellos:
       TabsC.color-acento-contenido.mb-4(data-aos="fade-left")
         .p-3.p-md-4(titulo="DELETE")
           .row.align-items-center
@@ -154,7 +154,7 @@
       p.mb-5(data-aos="fade-right") El uso de ORDER BY permite obtener resultados consistentes y facilita la presentación de la información en aplicaciones y sistemas gestores de bases de datos.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo compañía de transporte (fase de operaciones CRUD)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo de compañía de transporte (fase de operaciones CRUD)
       p(data-aos="fade-right") Una empresa de transporte cuenta con la base de datos física implementada en la nube. A partir de esta infraestructura, el administrador de bases de datos (#[b DBA]) desarrolla el módulo del backend encargado de procesar la manipulación diaria de los despachos y las consultas relacionadas con el estado operativo de la flota.
       p.mb-4(data-aos="fade-right") Con el propósito de garantizar una interacción segura con el servidor PostgreSQL, el #[b DBA] diseña y valida el siguiente conjunto de sentencias del Lenguaje de Manipulación de Datos (#[b DML]). El siguiente bloque de sentencias ejemplifica las principales operaciones #[b CRUD] en PostgreSQL, incluyendo la inserción de registros, la actualización condicional y la consulta de información mediante criterios de filtrado y ordenamiento:
       .row.justify-content-center.mb-4

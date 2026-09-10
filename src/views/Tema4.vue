@@ -27,7 +27,7 @@
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Arquitectura, ámbitos y ciclo de vida de un disparador (#[i Triggers])
-      p(data-aos="fade-right") Un #[b Trigger] es un objeto asociado exclusivamente a una relación o a una vista que se ejecuta automáticamente cuando ocurre un evento del Lenguaje de Manipulación de Datos (#[b DML]), como #[b INSERT], #[b UPDATE] o #[b DELETE].
+      p(data-aos="fade-right") Un #[b #[i Trigger]] es un objeto asociado exclusivamente a una relación o a una vista que se ejecuta automáticamente cuando ocurre un evento del Lenguaje de Manipulación de Datos (#[b DML]), como #[b INSERT], #[b UPDATE] o #[b DELETE].
       p.mb-4 En PostgreSQL, la implementación de un disparador requiere la creación de dos componentes independientes mediante instrucciones del Lenguaje de Definición de Datos (#[b DDL]).
       .row.bg-c3.mb-4
         .col-12
@@ -36,14 +36,14 @@
               SlyderA(tipo="b")
                 .row.align-items-center.justify-content-center.mx-4
                   .col-lg-5.mb-4.mb-lg-0
-                    h4 Función de trigger (Trigger Function)
-                    p.mb-0 Función desarrollada en #[b PL/pgSQL] que no recibe parámetros convencionales y retorna obligatoriamente el tipo especial #[b TRIGGER]. Contiene la lógica que será ejecutada cuando ocurra el evento asociado.
+                    h4 Función de #[i trigger] (#[i Trigger] Function)
+                    p.mb-0 Función desarrollada en #[b PL/pgSQL] que no recibe parámetros convencionales y retorna obligatoriamente el tipo especial #[b #[i TRIGGER]]. Contiene la lógica que será ejecutada cuando ocurra el evento asociado.
                   .col-lg-5
                     figure
                       img(src='@/assets/curso/temas/t4/img2.png', alt='', style='width: 430px').m-auto
                 .row.align-items-center.justify-content-center.mx-4
                   .col-lg-5.mb-4.mb-lg-0
-                    h4 Disparador (Trigger Object)
+                    h4 Disparador (#[i Trigger] Object)
                     p.mb-0 Objeto creado mediante la sentencia #[b CREATE TRIGGER], encargado de asociar la función previamente compilada con una relación específica y definir el evento que activará su ejecución.
                   .col-lg-5
                     figure
@@ -69,7 +69,7 @@
       p.mb-5(data-aos="fade-right") Comprender la arquitectura y el ámbito de ejecución de un disparador permite seleccionar la estrategia más adecuada según el tipo de proceso que se desea automatizar.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Creación de funciones de trigger y su asociación a eventos DML (BEFORE, AFTER, INSTEAD OF)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Creación de funciones de #[i trigger] y su asociación a eventos DML (BEFORE, AFTER, INSTEAD OF)
       p(data-aos="fade-right") El momento en que un disparador se ejecuta dentro del ciclo de vida de una transacción determina el efecto que tendrá sobre la operación realizada por el motor PostgreSQL. A continuación, se presentan las modalidades de activación disponibles.
       .row.align-items-center.justify-content-center.mb-3
         .col-lg-9.mb-4.mb-lg-0(data-aos="fade-right")
@@ -100,7 +100,7 @@
               img(src='@/assets/curso/temas/t4/img2.svg', alt='', style='width: 120px').m-auto
             p.text-center #[b OLD]
             p.text-center Contiene la versión anterior de la tupla durante operaciones #[b UPDATE] y #[b DELETE].
-      p.mb-0() El uso adecuado de los eventos #[b BEFORE], #[b AFTER] e #[b INSTEAD OF], junto con las variables #[b NEW] y  , permite implementar mecanismos de validación, auditoría y automatización que fortalecen la integridad y la consistencia de la información administrada por PostgreSQL.
+      p.mb-0() El uso adecuado de los eventos #[b BEFORE], #[b AFTER] e #[b INSTEAD OF], junto con las variables #[b NEW] y; permite implementar mecanismos de validación, auditoría y automatización que fortalecen la integridad y la consistencia de la información administrada por PostgreSQL.
       Separador
       #t_4_2.titulo-segundo.color-acento-contenido(data-aos="fade-right")
         h2 4.2 Abstracción lógica y optimización de consultas
@@ -141,7 +141,7 @@
                 p.mb-0 Genera los resultados en tiempo real a partir de las relaciones base. Almacena físicamente el resultado de la consulta en el almacenamiento del servidor.
             .row(titulo="Muestra siempre datos actualizados")
               .col-12
-                p.mb-0 Siempre refleja la información más reciente disponible. Representa una instantánea de los datos existente en el momento de su actualización.
+                p.mb-0 Siempre refleja la información más reciente disponible. Representa una instantánea de los datos existentes en el momento de su actualización.
             .row(titulo="Mayor tiempo de procesamiento")
               .col-12
                 p.mb-0 Puede requerir mayor tiempo de procesamiento cuando las consultas son complejas. Reduce significativamente los tiempos de respuesta en procesos analíticos y de reportería.

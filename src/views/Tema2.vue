@@ -159,7 +159,7 @@
       p.mb-5(data-aos="fade-right") Por esta razón, resulta recomendable analizar el plan de ejecución mediante la herramienta EXPLAIN PLAN disponible en pgAdmin, con el propósito de verificar que el optimizador de PostgreSQL utilice los índices adecuados y mantenga tiempos de respuesta acordes con los requerimientos de la aplicación.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo compañía de transporte (fase de operaciones CRUD)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo de compañía de transporte (fase de operaciones CRUD)
       p(data-aos="fade-right") Al finalizar la jornada laboral, la empresa de transporte requiere generar los reportes de liquidación contable para conocer el rendimiento financiero de las rutas y el nivel de actividad de su talento humano. Con este propósito, el experto en datos desarrolla y ejecuta un conjunto de consultas avanzadas y operaciones de unión relacional que permiten consolidar la información solicitada por la gerencia.
       p.mb-4(data-aos="fade-right") El siguiente bloque de consultas integra operaciones de JOIN, funciones de agregación, agrupamiento y paginación para generar reportes consolidados y optimizar la recuperación de información en PostgreSQL:
       .row.justify-content-center.mb-4
