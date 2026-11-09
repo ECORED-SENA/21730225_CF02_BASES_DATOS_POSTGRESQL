@@ -17,7 +17,7 @@
       Separador
       #t_1_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
         h2 1.1 Operaciones esenciales del ciclo de vida de los datos
-      p.mb-5(data-aos="fade-right") El mantenimiento y la persistencia de la información exigen el dominio de las operaciones conocidas mediante el acrónimo CRUD (Create, Read, Update y Delete; Crear, Leer, Actualizar y Borrar). En una solución informática concurrente, estas instrucciones alteran directamente los bloques físicos de almacenamiento y activan los mecanismos internos de control transaccional del motor de base de datos para preservar las propiedades ACID (Aislamiento, Consistencia, Integridad y Durabilidad).
+      p.mb-5(data-aos="fade-right") El mantenimiento y la persistencia de la información exigen el dominio de las operaciones conocidas mediante el acrónimo CRUD (Create, Read, Update y Delete; Crear, Leer, Actualizar y Borrar). En una solución informática concurrente, estas instrucciones alteran directamente los bloques físicos de almacenamiento y activan los mecanismos internos de control transaccional del motor de base de datos para preservar las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad).
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Sentencias de inserción masiva y selectiva de registros (INSERT INTO)
@@ -64,7 +64,7 @@
             img(src='@/assets/curso/temas/t1/img3.png', alt='', style='width: 350px').m-auto
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Modificación y actualización condicional de datos (UPDATE)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Remoción segura y vaciado físico de estructuras relacionales (DELETE, TRUNCATE)
       p(data-aos="fade-right") Cuando la información pierde vigencia operativa, PostgreSQL dispone de dos comandos con finalidades similares, pero con comportamientos internos y efectos sobre el rendimiento claramente diferenciados.
       p(data-aos="fade-right") A continuación, se resumen las principales características de cada uno de ellos:
       TabsC.color-acento-contenido.mb-4(data-aos="fade-left")
@@ -92,7 +92,7 @@
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Cláusulas de restricción fundamental (WHERE), operadores lógicos y relacionales
-      p(data-aos="fade-right") La cláusula ##[b WHERE] constituye el principal mecanismo de filtrado de las consultas. Cuando el proceso hijo del servidor ejecuta un escaneo sobre una tabla, evalúa cada tupla frente a la expresión condicional definida en esta cláusula. Únicamente aquellas cuyo resultado lógico sea #[b TRUE] serán incluidas en el conjunto de resultados enviado al cliente.
+      p(data-aos="fade-right") La cláusula #[b WHERE] constituye el principal mecanismo de filtrado de las consultas. Cuando el proceso hijo del servidor ejecuta un escaneo sobre una tabla, evalúa cada tupla frente a la expresión condicional definida en esta cláusula. Únicamente aquellas cuyo resultado lógico sea #[b TRUE] serán incluidas en el conjunto de resultados enviado al cliente.
       p(data-aos="fade-right") Para construir criterios de búsqueda, es posible combinar operadores relacionales estándar (=, <>, >, <, >=, <=) con operadores lógicos (#[b AND], #[b OR] y #[b NOT]). Esta combinación permite expresar reglas de negocio cada vez más específicas. Adicionalmente, PostgreSQL incorpora operadores especializados para realizar búsquedas sobre datos de tipo texto:
       .row.bg-c3.mb-3
         .col-12
@@ -155,7 +155,7 @@
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo de compañía de transporte (fase de operaciones CRUD)
-      p(data-aos="fade-right") Una empresa de transporte cuenta con la base de datos física implementada en la nube. A partir de esta infraestructura, el administrador de bases de datos (#[b DBA]) desarrolla el módulo del backend encargado de procesar la manipulación diaria de los despachos y las consultas relacionadas con el estado operativo de la flota.
+      p(data-aos="fade-right") Una empresa de transporte cuenta con la base de datos física implementada en la nube. A partir de esta infraestructura, el administrador de bases de datos (#[b DBA]) desarrolla el módulo del #[i backend] encargado de procesar la manipulación diaria de los despachos y las consultas relacionadas con el estado operativo de la flota.
       p.mb-4(data-aos="fade-right") Con el propósito de garantizar una interacción segura con el servidor PostgreSQL, el #[b DBA] diseña y valida el siguiente conjunto de sentencias del Lenguaje de Manipulación de Datos (#[b DML]). El siguiente bloque de sentencias ejemplifica las principales operaciones #[b CRUD] en PostgreSQL, incluyendo la inserción de registros, la actualización condicional y la consulta de información mediante criterios de filtrado y ordenamiento:
       .row.justify-content-center.mb-4
         .col-lg-10
@@ -198,7 +198,7 @@
                 .row.align-items-center.justify-content-center.mx-4
                   .col-lg-5.mb-4.mb-lg-0
                     h4 Garantía de la consistencia referencial
-                    p.mb-0 Si se intenta ejecutar una sentencia #[b INSERT INTO asignacion_turnos] utilizando una placa inexistente, por ejemplo, '#[b XYZ999]', el proceso hijo de PostgreSQL abortará inmediatamente la transacción y generará una excepción por violación de clave foránea (#[b FOREIGN KEY constraint]). Este comportamiento demuestra cómo el motor protege automáticamente la consistencia de los datos frente a registros inválidos provenientes de la aplicación frontend.
+                    p.mb-0 Si se intenta ejecutar una sentencia #[b INSERT INTO asignacion_turnos] utilizando una placa inexistente, por ejemplo, '#[b XYZ999]', el proceso hijo de PostgreSQL abortará inmediatamente la transacción y generará una excepción por violación de clave foránea (#[b FOREIGN KEY constraint]). Este comportamiento demuestra cómo el motor protege automáticamente la consistencia de los datos frente a registros inválidos provenientes de la aplicación #[i frontend].
                   .col-lg-5
                     figure
                       img(src='@/assets/curso/temas/t1/img10.png', alt='', style='width: 430px').m-auto

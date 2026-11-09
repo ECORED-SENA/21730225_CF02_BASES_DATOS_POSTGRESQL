@@ -22,8 +22,8 @@ export default {
       tema: 'Microcontroladores y sensores',
       titulo: 'Cuestionario',
       introduccion:
-        '<b>Objetivo:</b> evaluar la apropiación técnica y la capacidad de análisis procedimental en lo referente a operaciones DML, funciones de agregación, uniones relacionales (Joins) y el desarrollo de lógica programable (PL/pgSQL y Triggers) en PostgreSQL.',
-      barajarPreguntas: false,
+        '<b>Objetivo:</b> evaluar la apropiación técnica y la capacidad de análisis procedimental en lo referente a operaciones DML, funciones de agregación, uniones relacionales (joins) y el desarrollo de lógica programable (PL/pgSQL y triggers) en PostgreSQL.',
+      barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
@@ -59,8 +59,7 @@ export default {
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 2,
@@ -261,7 +260,7 @@ export default {
         {
           id: 8,
           texto:
-            '¿Qué tipo de Join devuelve únicamente las tuplas donde existe una coincidencia exacta y matemática entre las tablas involucradas?',
+            '¿Qué tipo de JOIN devuelve únicamente las tuplas donde existe una coincidencia exacta y matemática entre las tablas involucradas?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
@@ -358,7 +357,7 @@ export default {
         {
           id: 11,
           texto:
-            'Las secciones obligatorias que delimitan un bloque estructural básico en PL/pgSQL son:',
+            'CASO: Un desarrollador júnior de la empresa Logística Express requería actualizar el estado de un envío específico. Para ello ejecutó la siguiente instrucción: UPDATE envios SET estado = &apos;Entregado&apos;; olvidando incluir la cláusula WHERE. Al percatarse de que alteró los miles de registros de la empresa, intentó aplicar un ROLLBACK, pero el motor PostgreSQL rechazó la reversión porque la consola operaba en modo autocommit. ¿Cuál es el diagnóstico de la falla y qué buena práctica debió aplicar?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
@@ -389,7 +388,7 @@ export default {
         {
           id: 12,
           texto:
-            '¿Qué diferencia técnica clave existe entre una Función Almacenada y un Procedimiento Almacenado en PostgreSQL?',
+            '¿Qué diferencia técnica clave existe entre una función almacenada y un procedimiento almacenado en PostgreSQL?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [

@@ -159,7 +159,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/21730183_CF02_CFA.pdf',
+        download: 'downloads/21730225_CF02_CFA.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -227,12 +227,12 @@ export default {
       link: '',
     },
     {
-      referencia: 'Neon. (2026). Separating storage and compute. Neon Docs.',
+      referencia: 'Neon. (2026). Lakebase Postgres. Noen docs. ',
       link: 'https://neon.com/docs/postgres/overview',
     },
     {
       referencia:
-        'PostgreSQL Global Development Group. (2026). PostgreSQL 16.0 documentation: Chapter 18. Server setup and operation.',
+        'PostgreSQL Global Development Group. (2026). PostgreSQL 16.0 documentation: Chapter 19. Server setup and operation.',
       link: 'https://www.postgresql.org/docs/16/runtime.html',
     },
     {
@@ -248,7 +248,7 @@ export default {
         {
           nombre: 'Claudia Johanna Gómez Pérez',
           cargo:
-            'Profesional 06. Responsable del ecosistema virtual de recursos educativos digitales',
+            'Profesional G06. Responsable Ecosistema Virtual de Recursos Educativos Digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
@@ -299,25 +299,25 @@ export default {
         },
         {
           nombre: 'Juan Pablo Rojas Polania',
-          cargo: 'Animador y productor audiovisual',
+          cargo: 'Animador y productor multimedia',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
           nombre: 'Carlos Eduardo Garavito Parada',
-          cargo: 'Animador y productor audiovisual',
+          cargo: 'Animador y productor multimedia',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
           nombre: 'Maria Carolina Tamayo Lopez',
-          cargo: 'Locución',
+          cargo: 'Locutora',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
           nombre: 'German Acosta Ramos',
-          cargo: 'Locución',
+          cargo: 'Locutor',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
@@ -327,25 +327,25 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
+          nombre: 'Aixa Natalia Sendoya Fernández',
+          cargo: 'Validadora de recursos educativos digitales',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
           nombre: 'Ricardo Oliveros Zambrano',
           cargo: 'Validador de recursos educativos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: 'Aixa Natalia Sendoya Fernández',
-          cargo: 'Validador de recursos educativos digitales',
-          centro:
-            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
-        },
-        {
-          nombre: 'Daniel Ricardo Mutis Gómez',
+          nombre: 'Anyerson Wilfredo Pizo Ossa',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: 'Anyerson Wilfredo Pizo Ossa',
+          nombre: 'Daniel Ricardo Mutis Gómez',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',

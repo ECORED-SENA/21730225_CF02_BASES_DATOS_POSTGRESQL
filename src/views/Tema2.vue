@@ -11,7 +11,7 @@
       #t_2_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
         h2 2.1 Consultas y agrupamientos
       p(data-aos="fade-right") Las aplicaciones informáticas que interactúan con bases de datos corporativas, capaces de almacenar millones de tuplas, requieren estrategias que permitan recuperar únicamente la información necesaria. Extraer todos los registros de forma indiscriminada incrementa el tráfico de red y eleva el consumo de memoria del cliente, afectando el rendimiento general del sistema.
-      p.mb-5(data-aos="fade-right") De igual manera, la construcción de cuadros de mando (dashboards) ejecutivos demanda consolidar grandes volúmenes de transacciones individuales en indicadores de desempeño que faciliten el análisis del negocio.
+      p.mb-5(data-aos="fade-right") De igual manera, la construcción de cuadros de mando (#[i dashboards]) ejecutivos demanda consolidar grandes volúmenes de transacciones individuales en indicadores de desempeño que faciliten el análisis del negocio.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Optimización de paginación de resultados (LIMIT, OFFSET)
@@ -33,7 +33,7 @@
       p.mb-5(data-aos="fade-right") Por esta razón, se recomienda combinar siempre #[b LIMIT] y #[b OFFSET] con la cláusula #[b ORDER BY], garantizando un orden determinista y consistente entre las diferentes páginas de resultados presentadas en las interfaces de usuario.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Optimización de paginación de resultados (LIMIT, OFFSET)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Funciones de agregación e instrumentación de agrupamientos jerárquicos (GROUP BY, HAVING)
       p(data-aos="fade-right") Las funciones de agregación #[b SUM], #[b AVG], #[b COUNT], #[b MAX] y #[b MIN] realizan operaciones matemáticas sobre un conjunto de valores pertenecientes a una misma columna y producen un único resultado consolidado de interés estadístico.
       .row.mb-4
         .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
@@ -47,7 +47,7 @@
             .col-12
               figure.mb-3.mb-lg-0
                 img(src='@/assets/curso/temas/t1/img1.svg', alt='', style='width: 50px')
-              p.mb-0 Uno de los aspectos fundamentales del lenguaje SQL consiste en distinguir el momento en que actúan las cláusulas #[b WHERE] y #[b bHAVING] durante el procesamiento de una consulta. A continuación, se presenta la diferencia entre ambas cláusulas.
+              p.mb-0 Uno de los aspectos fundamentales del lenguaje SQL consiste en distinguir el momento en que actúan las cláusulas #[b WHERE] y #[b HAVING] durante el procesamiento de una consulta. A continuación, se presenta la diferencia entre ambas cláusulas.
       .row.justify-content-center.mb-4
         .col-10.col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
           .p-4.bg-c4
@@ -159,7 +159,7 @@
       p.mb-5(data-aos="fade-right") Por esta razón, resulta recomendable analizar el plan de ejecución mediante la herramienta EXPLAIN PLAN disponible en pgAdmin, con el propósito de verificar que el optimizador de PostgreSQL utilice los índices adecuados y mantenga tiempos de respuesta acordes con los requerimientos de la aplicación.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso: El sistema de gestión de recaudo de compañía de transporte (fase de operaciones CRUD)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Caso de uso. Sistema de gestión de recaudo de la empresa de transporte (fase de consolidación y reportes)
       p(data-aos="fade-right") Al finalizar la jornada laboral, la empresa de transporte requiere generar los reportes de liquidación contable para conocer el rendimiento financiero de las rutas y el nivel de actividad de su talento humano. Con este propósito, el experto en datos desarrolla y ejecuta un conjunto de consultas avanzadas y operaciones de unión relacional que permiten consolidar la información solicitada por la gerencia.
       p.mb-4(data-aos="fade-right") El siguiente bloque de consultas integra operaciones de JOIN, funciones de agregación, agrupamiento y paginación para generar reportes consolidados y optimizar la recuperación de información en PostgreSQL:
       .row.justify-content-center.mb-4

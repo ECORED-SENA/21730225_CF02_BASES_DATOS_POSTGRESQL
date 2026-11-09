@@ -187,7 +187,7 @@
       p.mb-5(data-aos="fade-right") La continuidad del negocio y la resiliencia operativa frente a desastres físicos o lógicos, como fallos de energía o corrupción del almacenamiento, dependen de la implementación de mecanismos de recuperación que permitan restaurar la información de manera confiable. En un entorno corporativo, una base de datos solo puede considerarse protegida cuando dispone de estrategias que permitan reconstruir su estado hasta el momento inmediatamente anterior a una contingencia.
       .titulo-tercer-nivel.mb-5(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/img1.png')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Fundamentos operativos del Log de transacciones o Write-Ahead Logging (WAL)
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Fundamentos operativos del #[i log] de transacciones o Write-Ahead Logging (WAL)
       p(data-aos="fade-right") El mecanismo #[b Write-Ahead Logging (WAL)] constituye uno de los pilares tecnológicos que garantizan la propiedad de durabilidad del modelo #[b ACID] en PostgreSQL. Su principio de funcionamiento establece que ninguna modificación sobre las tuplas físicas se almacena en las relaciones de datos hasta que el cambio ha sido registrado previamente de forma secuencial en los archivos de transacciones #[b WAL], ubicados en el directorio #[b pg_wal].
       p.mb-4(data-aos="fade-right") Cuando ocurre una interrupción inesperada del servidor, PostgreSQL utiliza la información registrada en estos archivos para recuperar automáticamente el estado consistente de la base de datos. A continuación, se presentan las principales funciones del mecanismo #[b WAL].
       .row.bg-c3.mb-4

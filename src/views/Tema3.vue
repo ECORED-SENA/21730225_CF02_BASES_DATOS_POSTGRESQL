@@ -6,7 +6,7 @@
         .titulo-principal__numero
           span 3
         h1 Lógica programable en el servidor (PL/pgSQL)
-      P.mb-0(data-aos="fade-right") El desarrollo de soluciones informáticas modernas exige que las reglas críticas del negocio no dependan exclusivamente de las capas de aplicación externas, como el frontend o el backend. Centralizar la lógica transaccional en el servidor reduce el tráfico de red, disminuye la latencia y fortalece la consistencia de los datos durante la ejecución de las operaciones. Con este propósito, PostgreSQL incorpora un entorno de programación que permite implementar procesos, automatizar tareas y ejecutar reglas de negocio directamente en el motor de base de datos.
+      P.mb-0(data-aos="fade-right") El desarrollo de soluciones informáticas modernas exige que las reglas críticas del negocio no dependan exclusivamente de las capas de aplicación externas, como el #[i frontend] o el #[i backend]. Centralizar la lógica transaccional en el servidor reduce el tráfico de red, disminuye la latencia y fortalece la consistencia de los datos durante la ejecución de las operaciones. Con este propósito, PostgreSQL incorpora un entorno de programación que permite implementar procesos, automatizar tareas y ejecutar reglas de negocio directamente en el motor de base de datos.
       Separador
       #t_3_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
         h2 3.1 Programación procedural en PostgreSQL

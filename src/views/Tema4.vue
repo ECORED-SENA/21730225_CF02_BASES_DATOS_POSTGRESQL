@@ -100,7 +100,7 @@
               img(src='@/assets/curso/temas/t4/img2.svg', alt='', style='width: 120px').m-auto
             p.text-center #[b OLD]
             p.text-center Contiene la versión anterior de la tupla durante operaciones #[b UPDATE] y #[b DELETE].
-      p.mb-0() El uso adecuado de los eventos #[b BEFORE], #[b AFTER] e #[b INSTEAD OF], junto con las variables #[b NEW] y; permite implementar mecanismos de validación, auditoría y automatización que fortalecen la integridad y la consistencia de la información administrada por PostgreSQL.
+      p.mb-0() El uso adecuado de los eventos #[b BEFORE], #[b AFTER] e #[b INSTEAD OF], junto con las variables #[b NEW] y #[b OLD]; permite implementar mecanismos de validación, auditoría y automatización que fortalecen la integridad y la consistencia de la información administrada por PostgreSQL.
       Separador
       #t_4_2.titulo-segundo.color-acento-contenido(data-aos="fade-right")
         h2 4.2 Abstracción lógica y optimización de consultas
