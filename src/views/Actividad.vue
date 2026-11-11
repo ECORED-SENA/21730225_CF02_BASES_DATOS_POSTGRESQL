@@ -363,22 +363,26 @@ export default {
           opciones: [
             {
               id: 'a',
-              texto: 'DECLARE, BEGIN, END;',
+              texto:
+                'Debió empaquetar la instrucción DML dentro de una transacción explícita (BEGIN ... COMMIT) y validar los cambios mediante un conteo antes de asentarlos.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'CREATE, SET, ALTER',
+              texto:
+                'El motor colapsó porque el comando UPDATE requiere obligatoriamente un índice Hash para no alterar toda la tabla.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'TRIGGER, FUNCTION, CALL',
+              texto:
+                'La sentencia debió ejecutarse mediante un comando TRUNCATE para que el sistema operativo solicitara una confirmación de red.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'IF, LOOP, EXCEPTION',
+              texto:
+                'El error fue del proceso autovacuum, que bloqueó el acceso físico al disco antes de procesar el filtro de seguridad.',
               esCorrecta: false,
             },
           ],
@@ -462,7 +466,7 @@ export default {
             {
               id: 'a',
               texto:
-                'Modificar los valores de la tupla entrante antes de que se validen las restricciones e <i>integrity</i>.',
+                'Modificar los valores de la tupla entrante antes de que se validen las restricciones de integridad.',
               esCorrecta: true,
             },
             {

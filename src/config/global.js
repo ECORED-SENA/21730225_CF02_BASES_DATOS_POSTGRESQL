@@ -227,7 +227,8 @@ export default {
       link: '',
     },
     {
-      referencia: 'Neon. (2026). Lakebase Postgres. Noen docs. ',
+      referencia:
+        'Neon. (2026). Lakebase Postgres. The serverless database in the Neon backend. ',
       link: 'https://neon.com/docs/postgres/overview',
     },
     {
